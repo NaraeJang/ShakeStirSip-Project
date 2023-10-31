@@ -11,7 +11,6 @@ const Navbar = () => {
     console.log(linksContainerRef.current.getBoundingClientRect());
     console.log(linksRef.current.getBoundingClientRect());
     setShowLinks(!showLinks);
-    console.log(showLinks);
   };
 
   const linksStyle = {
@@ -20,7 +19,6 @@ const Navbar = () => {
       : "0px",
   };
 
-  console.log(showLinks);
   return (
     <nav className="nav">
       <div className="nav-center">

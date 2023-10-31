@@ -20,6 +20,21 @@ const router = createBrowserRouter([
         element: <Landing />,
         errorElement: <SinglePageError />,
       },
+      {
+        path: "cocktail/:id",
+        element: <Cocktail />,
+        errorElement: <SinglePageError />,
+      },
+      {
+        path: "about",
+        element: <About />,
+        errorElement: <SinglePageError />,
+      },
+      {
+        path: "newsletter",
+        element: <Newsletter />,
+        errorElement: <SinglePageError />,
+      },
     ],
   },
 ]);
