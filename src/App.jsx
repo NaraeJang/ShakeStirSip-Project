@@ -9,6 +9,9 @@ import {
   SinglePageError,
 } from "./pages";
 
+import { loader as landingLoader } from "./pages/Landing";
+import { QueryClient } from "react-query";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +21,7 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing />,
+        loader: landingLoader(queryClient),
         errorElement: <SinglePageError />,
       },
       {
